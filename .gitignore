@@ -1,0 +1,39 @@
+# Build outputs
+**/bin/
+**/obj/
+**/tmp/
+**/out/
+**/TestResults/
+**/artifacts/
+
+# User-specific and IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Logs and runtime artifacts
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.err
+*.stackdump
+
+# OS files
+.DS_Store
+
+# Local environment files
+.env
+.env.*
+
+.ralf-logs/
+.serena/
+
+**/__pycache__/
