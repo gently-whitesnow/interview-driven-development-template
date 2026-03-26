@@ -60,9 +60,7 @@
 
 4) Удали задачу из `specs/backlog/ACTIVE.md` (completed tasks не хранятся в ACTIVE).
 
-5) Если затронута дизайн-система — обнови `specs/design-system/MASTER.md` и `specs/design-system/pages/<page>.md`.
-
-6) **Boundary enforcement** при обновлении PRD/TECHSPEC:
+5) **Boundary enforcement** при обновлении PRD/TECHSPEC:
    - Прочитай "Document Boundary" в начале файла перед редактированием.
    - Имена полей, enum values, thresholds → только TECHSPEC.
    - "Пользователь может / видит" → только PRD.

@@ -56,7 +56,7 @@
 - `specs/TECHSPEC.md` — если изменились контракты, data model, workflow, lifecycle.
 - `specs/PRD.md` — только если изменилось user-visible behavior, scope, user flow.
 - `specs/ADR/` — если видно новое архитектурное решение. `specs/ADR/REGISTRY.md` — обновить.
-- `specs/design-system/**` — если затронут UI.
+
 
 **Boundary enforcement при обновлении спеков:**
 - Прочитай секцию "Document Boundary" в начале PRD.md / TECHSPEC.md перед редактированием.

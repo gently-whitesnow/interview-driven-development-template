@@ -81,11 +81,6 @@
 - "Пользователь может / видит / нажимает" → только PRD, не TECHSPEC.
 - "Почему X, а не Y" → ADR, не inline.
 
-## Design System
-Если изменения затрагивают UI:
-- Проверь `design-system/MASTER.md` — нужны ли новые статусы, иконки, цвета.
-- Проверь `design-system/pages/` — нужен ли override для экрана.
-
 ## Правило
 **ACTIVE.md содержит только open tasks. Completed → archive.**
 
@@ -96,7 +91,7 @@
 - INBOX.md пуст или содержит только Hold-пункты / major-пункты, перенаправленные в `specs/changes/**`
 - нет дублей, у задач есть DOD/scope/refs
 - порядок отражает зависимости
-- PRD/TECHSPEC/ADR/design-system обновлены при необходимости для tiny-изменений
+- PRD/TECHSPEC/ADR обновлены при необходимости для tiny-изменений
 - для major-изменений создан или обновлён change pack
 
 ## Старт
