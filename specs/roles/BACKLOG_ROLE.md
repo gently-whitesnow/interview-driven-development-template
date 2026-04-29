@@ -63,11 +63,18 @@ Milestone не проработан, если для него нет task-level 
 ```md
 - [ ] SPEC-NNN Task Title
 
+Blocker: <SPEC-XXX | —>
+
 Related ADR
 <ссылки на ADR или "—">
 
 Task Context
 <полный контекст: зачем, какую часть milestone реализует, ссылки на PRD/TECHSPEC, ограничения, инварианты>
+
+Integration Points
+<какие существующие компоненты потребляют или зависят от этого изменения;
+какие данные проходят через эту точку и куда дальше;
+side effects для вызывающего кода, UI, persistence>
 
 Task DOD
 <код, тесты, проверки, ограничения, expected behavior>
@@ -75,6 +82,10 @@ Task DOD
 
 В `Task Context` каждой задачи ссылайся на релевантные ADR, чтобы coding agent не пересматривал решения.
 Если источник — change pack, ссылайся и на `PRD_DELTA.md` / `TECHSPEC_DELTA.md` / `MERGE_PLAN.md`.
+
+`Blocker` — строка обязательна; `—` если блокеров нет.
+
+`Integration Points` обязательна. Если изменение добавляет новый event/signal — указать всех producers и consumers. Если новый UI-элемент — перечислить все состояния (empty, null, error, loading). Если новое поле — указать все компоненты, которые его отображают или используют.
 
 ## Формат ACTIVE.md
 

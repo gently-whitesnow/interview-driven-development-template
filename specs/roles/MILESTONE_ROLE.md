@@ -74,3 +74,7 @@ Conditions of done на уровне системы/продукта.
 ## Главное правило
 
 Задача — спроектировать правильные крупные вехи реализации продукта, а не расписать работу по задачам. Для substantial brownfield changes сначала используй change pack flow из `specs/OPERATOR.md`; `MILESTONES.md` обновляй только если это действительно меняет roadmap.
+
+## Файл-гигиена
+
+`MILESTONES.md` — про активный и ближайший roadmap. Завершённые / landed milestones переноси в `specs/backlog/archive/M<N>-<slug>.md` со ссылкой оттуда на актуальный task report. В корневом файле оставляй однострочную запись «M<N> — done, archive: <path>», чтобы roadmap читался целиком, не разрастаясь.

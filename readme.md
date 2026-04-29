@@ -49,6 +49,8 @@
 | `ADR/` | Architecture Decision Records — зафиксированные архитектурные решения с trade-offs |
 | `AGENTS.md` | Универсальные правила кодинга для AI-агентов |
 
+**Декомпозиция при росте.** Если `PRD.md` или `TECHSPEC.md` перерастает читаемые размеры (~600+ строк), допустимо превратить корневой файл в thin index, а контент разнести по `specs/prd/<area>.md` или `specs/techspec/<module>.md`. В index-файле остаются только Document Boundary, оглавление со ссылками на per-area файлы и cross-cutting секции (Overview, Scope, NFR, Risks). Per-module данные (Data Model, Interfaces, Workflows) уезжают в свои файлы. Делать это сразу не нужно — введи декомпозицию, когда поиск по корневому файлу начинает мешать.
+
 ### Операционный слой
 
 | Файл | Назначение |
